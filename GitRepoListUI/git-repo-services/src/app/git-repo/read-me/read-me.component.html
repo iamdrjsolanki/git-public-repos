@@ -1,0 +1,12 @@
+<hr>
+<div class="row">
+  <div class="container">
+    <div class="col-md-12">
+      <hr>
+      <h3>Readme.md</h3>
+      <hr>
+      <p *ngIf="!fetchReadme">Fetching Read Me text....</p>
+      <p *ngIf="fetchReadme" style="display: block; font-family: monospace; margin: 1em 0px;">{{ content }}</p>
+    </div>
+  </div>
+</div>

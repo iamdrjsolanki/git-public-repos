@@ -1,0 +1,17 @@
+<!-- <div class="col-xs-12" style="overflow-y: auto; max-height: 400px;"> -->
+<h3>Repositories</h3>
+<hr>
+<div class="col-xs-12">
+  <a style="cursor: pointer;" class="list-group-item border-0 clearfix"
+    *ngFor="let repo of repos; let i = index"
+    (click)="onSelected(i)"
+  >
+    <div class="pull-left">
+      <h4 class="list-group-item-heading">{{ repo.name }}</h4>
+      <p class="list-group-item-text disabled">{{ repo.description }}</p>
+    </div>
+    <!-- <span class="pull-right">
+      <a (click)="goToLink(repo.html_url)">GitHub</a>
+    </span> -->
+  </a>
+</div>

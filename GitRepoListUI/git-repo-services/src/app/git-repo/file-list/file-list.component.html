@@ -1,0 +1,16 @@
+<h3>Files</h3>
+<hr>
+<div class="col-xs-12" style="overflow-y: auto; max-height: 400px;">
+<!-- <div class="col-xs-12"> -->
+  <a style="cursor: pointer;" class="list-group-item clearfix"
+    *ngFor="let bfile of branchFiles"
+  >
+    <div class="pull-left">
+      <h4 class="list-group-item-heading disabled">{{ bfile.name }}</h4>
+    </div>
+    <span class="pull-right">
+      {{ bfile.type }}
+    </span>
+  </a>
+</div>
+<app-read-me [repoNameForReadme]="repoName"></app-read-me>

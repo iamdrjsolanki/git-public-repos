@@ -1,0 +1,15 @@
+<app-header></app-header>
+<mat-sidenav-container class = "example-container">
+   <mat-sidenav class="example-sidenav" *ngIf="isLoggedIn" mode = "side" opened>
+      <app-side-panel></app-side-panel>
+   </mat-sidenav>
+   <mat-sidenav-content class="example-sidenav-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+   </mat-sidenav-content>
+</mat-sidenav-container>

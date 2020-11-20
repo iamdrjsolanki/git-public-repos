@@ -1,0 +1,15 @@
+<div class="col-md-12">
+  <img [src]="userDetails.avatar_url" alt="{{ userDetails.name }}"
+        class="img-responsive" style="max-height: 100px;">
+  <p>{{ userDetails.name }}</p>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Followers</p>
+      <p>{{ userDetails.followers }}</p>
+    </div>
+    <div class="col-md-6">
+      <p>Followings</p>
+      <p>{{ userDetails.following }}</p>
+    </div>
+  </div>
+</div>

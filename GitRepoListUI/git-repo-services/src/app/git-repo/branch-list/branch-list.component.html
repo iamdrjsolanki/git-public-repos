@@ -1,0 +1,16 @@
+<h3>Branches</h3>
+<hr>
+<div class="col-xs-12" style="overflow-y: auto; max-height: 400px;">
+  <a style="cursor: pointer;"
+    class="list-group-item clearfix"
+    *ngFor="let branch of branches; let i = index"
+    (click)="onBranchSelected()"
+  >
+    <div class="pull-left">
+      <p class="list-group-item-text">{{ branch.name }}</p>
+    </div>
+    <span class="pull-right">
+      {{ branch.name }}
+    </span>
+  </a>
+</div>
